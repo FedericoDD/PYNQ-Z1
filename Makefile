@@ -59,7 +59,7 @@ CURR_CONFIG ?= ${MAIN_PRJ}-${CORE_NR}-${IBW}-${ARRSZ}
 ##############################################################
 #Target boards 
 
-TRGT_PLATFORM ?=ultra96_v2
+TRGT_PLATFORM ?=pynqz2
 GENERIC_TRGT_PLATFORM ?=zynq
 
 
