@@ -27,8 +27,7 @@ jobs:
       - name: run
         run: |
            mkdir -p path/to/artifact
-           echo hello > path/to/artifact/world.txt
-           cd ..
+           echo "hello" > path/to/artifact/world.txt
            mkdir -p path/to/arti
            ls -lahR
            pwd
