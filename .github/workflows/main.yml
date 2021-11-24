@@ -34,7 +34,7 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
          name: my-artifact
-         path: path/
+         path: $PWD/path/
    
   # This workflow contains a single job called "build"
   download:
@@ -51,6 +51,9 @@ jobs:
            ls
            pwd
            
+      - uses: actions/download-artifact@v2
+        with:
+         name: my-artifact
 
       
       - name: run
@@ -60,6 +63,4 @@ jobs:
            pwd
            cat $PWD/to/artifact/*
 
-#      - uses: actions/download-artifact@v2
-#        with:
-#         name: my-artifact
+
