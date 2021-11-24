@@ -30,7 +30,7 @@ jobs:
            echo hello > path/to/artifact/world.txt
            cd ..
            mkdir -p path/to/arti
-           ls path/to/
+           ls -lahR
            pwd
            
       - uses: actions/upload-artifact@v2
