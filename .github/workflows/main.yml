@@ -58,5 +58,6 @@ jobs:
       - name: run
         run: |
            ls 
-           pwd       
+           pwd
+           cat /to/artifact
 
