@@ -21,20 +21,16 @@ jobs:
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
       
-      - name: Make all
-        run: |
-          mkdir /build
-          touch file.txt
-          echo "Hi" > /build/file.txt
-          pwd
-          ls
+    steps:
+      - uses: actions/checkout@v2
 
-      - name: Upload build folder as artifact
-        uses: actions/upload-artifacts@v2
+      - run: mkdir -p path/to/artifact
+
+      - run: echo hello > path/to/artifact/world.txt
+
+      - uses: actions/upload-artifact@v2
         with:
-          name: build_artifact
-          path: /build/
+         name: my-artifact
+         path: path/to/artifact/world.txt
+
