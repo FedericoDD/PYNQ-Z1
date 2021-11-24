@@ -60,8 +60,7 @@ jobs:
       - name: run
         run: |
            echo $PWD
-           ls $PWD/to/
+           ls -rlah
            pwd
-           cat $PWD/to/artifact/*
 
 
