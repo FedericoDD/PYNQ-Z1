@@ -28,9 +28,11 @@ jobs:
         run: |
            mkdir -p path/to/artifact
            echo hello > path/to/artifact/world.txt
-
+           ls
+           pwd
+           
       - uses: actions/upload-artifact@v2
         with:
          name: my-artifact
-         path: path/to/artifact/
+         path: $PWD/artifact/
 
