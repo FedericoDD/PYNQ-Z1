@@ -27,8 +27,8 @@ jobs:
       - run: |
           cd ./build
           touch file.txt
-           
-      - uses: actions/upload-artifact@v2
+      - name: name    
+        uses: actions/upload-artifact@v2
         with:
           name: my-artifact
           path: build/
