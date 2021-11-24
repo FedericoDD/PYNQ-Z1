@@ -60,5 +60,5 @@ jobs:
            echo $PWD
            ls $PWD/to/
            pwd
-#           cat to/artifact
+           cat $PWD/to/artifact/*
 
