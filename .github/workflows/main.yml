@@ -27,14 +27,14 @@ jobs:
       
       - name: Make all
         run: |
-          mkdir ./build
-          cd ./build 
+          mkdir /build
           touch file.txt
-          echo "Hi" > file.txt
+          echo "Hi" > /build/file.txt
+          pwd
+          ls
 
       - name: Upload build folder as artifact
         uses: actions/upload-artifacts@v2
         with:
           name: build_artifact
-          path: $PWD/build/
-          if-no-files-found: ignore
+          path: /build/
