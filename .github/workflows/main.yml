@@ -29,6 +29,7 @@ jobs:
            mkdir -p path/to/artifact
            echo "hello" > path/to/artifact/world.txt
            mkdir -p path/to/arti
+           echo "hello" > path/to/arti/world1.txt
            ls -lahR
            pwd
            
@@ -61,7 +62,7 @@ jobs:
       - name: run
         run: |
            echo $PWD
-           ls -rlah
+           ls -lahR
            pwd
            ls $PWD/build/to
 
