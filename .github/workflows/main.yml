@@ -30,8 +30,8 @@ jobs:
            
       - uses: actions/upload-artifact@v2
         with:
-         name: my-artifact
-         path: build/
+          name: my-artifact
+          path: build/
    
   # This workflow contains a single job called "build"
   download:
