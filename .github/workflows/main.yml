@@ -24,19 +24,11 @@ jobs:
       
     steps:
       - uses: actions/checkout@v2
-      - name: run
-        run: |
-           mkdir -p path/to/artifact
-           echo "hello" > path/to/artifact/world.txt
-           mkdir -p path/to/arti
-           echo "hello" > path/to/arti/world1.txt
-           ls -lahR
-           pwd
            
       - uses: actions/upload-artifact@v2
         with:
          name: my-artifact
-         path: path/
+         path: build/
    
   # This workflow contains a single job called "build"
   download:
@@ -64,6 +56,6 @@ jobs:
            echo $PWD
            ls -lahR
            pwd
-           ls $PWD/build/to
+           ls $PWD/build/
 
 
