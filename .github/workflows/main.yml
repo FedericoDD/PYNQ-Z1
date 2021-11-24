@@ -27,11 +27,11 @@ jobs:
       - run: |
           cd ./build
           touch file.txt
-      - name: name    
-        uses: actions/upload-artifact@v2
+          
+      - uses: actions/upload-artifacts@v2
         with:
-          name: my-artifact
-          path: build/
+         name: artifact_build
+         path: build/
    
   # This workflow contains a single job called "build"
   download:
