@@ -64,6 +64,6 @@ jobs:
            echo $PWD
            ls -rlah
            pwd
-           ls $PWD/build/
+           ls $PWD/build/to
 
 
